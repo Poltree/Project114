@@ -11,14 +11,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 
   <style type="text/css">
-  h3
+  body{
+	  background-image="background.jfif"
+	  
+}
+	  
+h3
   {
     font-size: 25px !important;
   }
   
   canvas {
-  	border:1px solid black;
+  
+	  animation-name:colors;
+	  animation-duration:14s;
+	  animation-iteration-count: infinite;
   }
+	  @keyframes colors{
+		  from{box-shadow:1px 1px 32px blue;}
+		  to{box-shadow:1px 1px 32px purple;}
+	  }
+	
   </style>
 </head>
 
